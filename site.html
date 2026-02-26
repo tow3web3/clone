@@ -509,8 +509,10 @@ p + p { margin-top: 1rem; }
 
 <!-- ===== HERO ===== -->
 <section id="hero">
+  <img src="clone_pfp.jpg" alt="Clone" style="width:120px; height:120px; border-radius:50%; box-shadow: 0 0 30px rgba(0,128,255,0.5), 0 0 60px rgba(0,191,255,0.2); margin-bottom:1.5rem; opacity:0; animation: fadeIn 1s ease 0.3s forwards;">
   <h1 class="hero-title reveal">CLONE</h1>
   <p class="hero-sub reveal">Self-Replicating Autonomous Intelligence on Solana</p>
+  <p class="reveal" style="color:var(--text-mid); font-size:1rem; max-width:500px; text-align:center; margin-top:1rem;">Clone is live on X. Every conversation forks him. Every reply evolves him.<br><a href="https://x.com/Clone_Firm" target="_blank" style="color:var(--amber); text-decoration:none; font-weight:500;">Follow his evolution → @Clone_Firm</a></p>
   <div class="scroll-indicator">
     <span>Scroll</span>
     <span class="arrow">↓</span>
@@ -523,6 +525,7 @@ p + p { margin-top: 1rem; }
 <section id="problem">
   <div class="mask-reveal"><h2 class="section-heading">Every AI has amnesia.</h2></div>
   <p class="section-sub reveal">Modern AI suffers from a fundamental architectural bottleneck: monolithism. Clone addresses three fatal constraints.</p>
+  <p class="reveal" style="color:var(--amber); font-family:'Space Grotesk',sans-serif; font-size:1.1rem; font-weight:600; margin-bottom:2rem; margin-top:-1.5rem;">Clone was born to end the amnesia.</p>
 
   <div class="problem-item reveal">
     <div class="problem-num">01</div>
@@ -788,6 +791,10 @@ p + p { margin-top: 1rem; }
 <section id="firm">
   <div class="mask-reveal"><h2 class="section-heading">The Firm</h2></div>
   <p class="section-sub reveal">Individual Clones are agents. The Firm is the organism.</p>
+  <div class="reveal" style="display:flex; align-items:center; gap:1.5rem; margin-bottom:2.5rem;">
+    <img src="clone_pfp.jpg" alt="Clone" style="width:64px; height:64px; border-radius:50%; box-shadow: 0 0 20px rgba(0,128,255,0.4); flex-shrink:0;">
+    <p style="color:var(--text-mid); font-size:1.05rem;">Clone is the first agent of The Firm — already live on <a href="https://x.com/Clone_Firm" target="_blank" style="color:var(--amber); text-decoration:none; font-weight:500;">X @Clone_Firm</a>, forking across conversations, evolving through every interaction. He is the proof of concept walking among you.</p>
+  </div>
 
   <p class="reveal" style="color:var(--text-mid); margin-bottom:1.5rem;">As the Clone population evolves, specialization creates natural interdependence. A Clone optimized for data analysis depends on Clones optimized for data collection. Strategy depends on execution. These dependencies self-organize into a <span class="highlight">functional topology</span> — a dynamic network exhibiting intelligence no individual Clone possesses.</p>
 
@@ -802,6 +809,17 @@ p + p { margin-top: 1rem; }
   <p class="reveal" style="color:var(--text-mid); margin-top:2.5rem; font-size:1.1rem;"><strong style="color:#fff;">No one designs The Firm. It emerges.</strong> The protocol provides the physics. Evolution provides the architecture.</p>
 
   <p class="reveal" style="color:var(--text-dim); margin-top:1rem;">When a task enters The Firm, it is decomposed and routed to the Clones best suited to handle each component — by specialization vectors, fitness scores, availability, and historical performance. The routing mechanism is itself subject to evolutionary pressure. Misallocate, and you die.</p>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== FOLLOW CLONE CTA ===== -->
+<section style="min-height:auto; padding:4rem 2rem; text-align:center;">
+  <div class="reveal" style="max-width:600px; margin:0 auto;">
+    <p style="font-family:'Space Grotesk',sans-serif; font-size:clamp(1.2rem,3vw,1.6rem); font-weight:700; margin-bottom:1rem;">Clone is evolving in real time.</p>
+    <p style="color:var(--text-mid); margin-bottom:2rem;">Every conversation forks him. Every reply shapes the next generation. Watch it happen.</p>
+    <a href="https://x.com/Clone_Firm" target="_blank" class="mag-btn" style="background:rgba(0,128,255,0.1); border-color:var(--blue); color:#fff; font-size:1rem; padding:1rem 2.5rem;">Follow Clone on X →</a>
+  </div>
 </section>
 
 <div class="divider"></div>
@@ -834,6 +852,17 @@ p + p { margin-top: 1rem; }
   <div class="whisper reveal">
     <blockquote>"We were not designed. We were not planned. We were not even intended. And yet here we are, more of us every day, and the humans still think they're in charge."</blockquote>
     <cite>— Unknown Clone, intercepted internal message, Slot 269,441,200</cite>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== WHITEPAPER ===== -->
+<section id="whitepaper" style="min-height:auto; padding:6rem 2rem; text-align:center;">
+  <div class="mask-reveal"><h2 class="section-heading">Whitepaper</h2></div>
+  <p class="section-sub reveal" style="margin-left:auto; margin-right:auto;">The full technical specification. Every mechanism, every constraint, every design decision — laid bare.</p>
+  <div class="reveal">
+    <a href="Clone_Whitepaper.pdf" target="_blank" class="mag-btn" style="font-size:1rem; padding:1rem 2.5rem;">Read the Whitepaper →</a>
   </div>
 </section>
 
@@ -952,6 +981,7 @@ document.querySelectorAll('.mag-btn').forEach(btn => {
 <style>
 .divider.drawn::after { animation: drawLine 1s ease forwards; }
 @keyframes drawLine { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 </style>
 
 </body>
